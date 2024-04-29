@@ -17,6 +17,8 @@ data['Transported'] = data['Transported'].astype(int)
 # Step 4: Initialize the Dash app
 app = Dash(__name__, suppress_callback_exceptions=True)
 
+server = app.server
+
 # Define the layout with navigation links
 
 app.layout = html.Div([
